@@ -1,0 +1,16 @@
+{% extends 'home/index.html' %}
+
+
+{% block content %}
+
+<div class="container">
+
+    <form method="post" action="" style="right: 30px;">
+        {% csrf_token %}
+        {{form}}
+
+        <button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
+    </form>
+
+</div>
+{% endblock %}

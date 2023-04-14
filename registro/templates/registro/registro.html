@@ -1,0 +1,16 @@
+{% extends 'home/index.html' %}
+
+
+{% block content %}
+
+<div class="container" style="width: 30%; margin-left: 30px;">
+
+    <form method="post" action="" style="right: 30px;">
+        {% csrf_token %}
+        {{form}}
+
+        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+    </form>
+
+</div>
+{% endblock %}
