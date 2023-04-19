@@ -55,10 +55,10 @@
 
 						{% if user.is_authenticated %}
 
+						<li><a href="{% url 'salir1' %}">Cerrar sesion</a></li>
 						<li class="current">
 							Hola, {{ user.username }}
 						</li>
-						<li><a href="{% url 'salir1' %}">Cerrar sesion</a></li>
 						{% else%}
 						<li><a href="{% url 'registro' %}">Registrate</a></li>
 						<li><a href="{% url 'login' %}">Iniciar sesion</a></li>
